@@ -5,6 +5,7 @@
 }
 html{
     font-size:62.5%; /* porcentagem utilizada pelo navegador*/
+    scroll-behavior: smooth;
 }
 header{
     background-color: rgba(0, 0, 0, 1);
@@ -14,6 +15,8 @@ header{
     position: fixed;   
     padding-top: 10px; 
 }
+
+
 h3{
     font-size: 20px;
     font-family: Arial;
@@ -28,20 +31,21 @@ h4{
     padding-bottom: 5px;
 }
 body{
-    background-color: rgba(32, 0, 158, 0.6);
+    background-color: rgb(4, 38, 47);
 }
 .container{
     display:block;
     background-color: #fff;
     width: 95%;
-    box-shadow: 2px 2px rgb(122, 122, 122);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
     margin: 0 auto;
    /* max-width: 95%;*/
    max-width: 90%;
    max-height: 90%;
    min-width: 0;
    min-height: 0;    
-   margin-top: 3%;                                                                                                                                                                                                                                                                                                                                                           
+  /* margin-top: 3%;   */      
+  margin-top: 60px;                                                                                                                                                                                                                                                                                                                                                         
 }
 footer{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -108,7 +112,7 @@ button{
 
 #grid-container{
     margin-top: 5px;
-    background-color: rgb(0, 0, 209);
+    background-color: rgba(0, 0, 0, 0.753);
     padding: 5px;
   
 }
@@ -117,7 +121,7 @@ button{
     display: grid;
   /*  grid-template-columns: 1fr 1fr;*/
   grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    grid-gap: 1px;
+    grid-gap: 10px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -128,9 +132,13 @@ button{
     text-align: center;
     font-size: 1.6rem;
     padding:2px;
+    padding-bottom: 10px;
+    box-shadow: 0.2px 0.2px rgb(11, 0, 92);
 }
 #formulario{
-    background-color: rgba(32, 0, 158, 0.6);
+    background-color: rgba(0, 1, 90, 0.6);
+    color:#fff;
+    text-shadow: 2px 2px #000 ;
 }
 .formulario-contato{
     font-family: arial;
@@ -139,12 +147,15 @@ button{
     text-align: left;
     margin-left: 5%;
     font-weight: bolder;
+    color:#fff;
+    text-shadow: 2px 2px #000 ;
 }
 
 input{
     font-family: sans-serif;
     font-size: 1.7rem;
     padding: 5px;            
+    color:#fff;
 }
 
 .dados-formulario{
@@ -168,4 +179,58 @@ a{
 
 a:hover{
     color: rgba(255, 255, 0, 1.0);
+}
+
+#enviar{
+    background-color: rgb(0, 151, 88);     
+}
+#limpar{
+    background-color: rgb(151, 13, 0);     
+}
+
+.imagem-grid{
+    width: 18rem;
+    height: 10rem;
+    border-radius: 20px;
+    transition: 300ms ease-in-out;
+}
+
+img:hover{
+    transform: scale(2);
+}
+
+.texto-grid{
+    font-family: arial;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+.link-grid{    
+    color: rgb(255, 247, 236);
+    font-weight: bold;
+    font-size: 1.8rem;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#eu{
+    width: 30rem;
+    height: 30rem; 
+    
+    border-radius: 50%;
+}
+
+@media(min-width:280px ) and (max-width:450px)
+{
+    header{
+        text-align: center;            
+    }
+
+    nav{
+        text-align: center;
+        word-spacing: 15px;
+        padding-bottom: 10px;
+        
+    }
 }
